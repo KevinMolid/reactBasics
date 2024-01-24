@@ -1,4 +1,46 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 60px;
+}
+
+.nav-items {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    font-weight: 600;
+}
+
+header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1em 2em;
+}
+
+main {
+    padding: 2em;
+}
+
+.main-ul-items li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1em 2em;
+    color: #FFFFFF;
+    background: #AAAAAA;
 }

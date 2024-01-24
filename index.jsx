@@ -1,15 +1,19 @@
+/* ---------- Imports ---------- */
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const navbar = (
-    <nav>
-        <h1>Bob's Bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-)
+/* ---------- Define root element ---------- */
+const root = ReactDOM.createRoot(document.getElementById("root"))
 
-ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+/* ---------- Components ---------- */
+import Header from "./components/Header"
+import Main from "./components/Main"
+import Footer from "./components/Footer"
+
+root.render(
+    <>
+        <Header />
+        <Main />
+        <Footer />
+    </>
+)
